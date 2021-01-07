@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Supermercado+One&family=Ubuntu&display=swap');
+
+:root {
+    --title-font: 'Redressed', cursive;
+    --section-header: 'Supermercado One', fantasy;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: var(--title-font);
+    padding-bottom: 1rem;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    height: 100vh;
+}
+
+/* Navbar */
+
+.nav {
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(to right, lavender, lavenderblush);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    z-index: 1000000;
+}
+
+.nav-icon {
+    font-size: 6rem;
+    text-decoration: none;
+    color: #010101;
+    font-family: var(--title-font);
+    padding-left: 1rem;
+    letter-spacing: 0.1rem;
+    outline: none;
+}
+
+.nav-links {
+    font-size: 3rem;
+    width: 50%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link {
+    text-decoration: none;
+    color: #010101;
+    font-family: var(--section-header);
+    outline: none;
+    transition: all 0.3s linear;
+}
+
+.link:hover {
+    color: #010101;
+    transform: translateY(-0.5rem);
+    border-bottom: 0.2rem #010101 solid;
+}
+
+/* Banner */
+
+.banner {
+    background: linear-gradient(to right, antiquewhite, linen);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 7rem;
+}
+
+.banner h1 {
+    font-size: 6rem;
+    font-family: var(--title-font);
+    margin-bottom: 1rem;
+    color: #010101;
+    font-weight: 100;
+}
+
+.banner p {
+    font-size: 2rem;
+    color: #101010;
+    font-family: var(--section-header);
+    letter-spacing: 0.1rem;
+}
+
+.banner-btn {
+    color: #111111;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: #111111 solid 0.2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+}
+
+.banner-btn:hover {
+    background-color: #111111;
+    color: snow;
+}
+
+/* About */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 50vh;
+    background: linear-gradient(to right, bisque, blanchedalmond);
+}
+
+.cardcontainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-about{
+    height: 10rem;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cardcontainer{
+    margin-bottom: 3rem;
+}
+
+.card-about h2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-family: var(--section-header);
+}
+
+.card-about p{
+    font-size: 2rem;
+
+}
+/* Donate */
+
+.donate {
+    min-height: 50vh;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, aliceblue, snow);
+    flex-direction: column;
+    }
+
+.card {
+    min-height: 30rem;
+    display: flex;
+    box-shadow: 1rem 1rem 2rem #454545;
+    flex-direction: column;
+    min-width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    transition: 0.3s linear all;
+    margin-top: 2rem;
+}
+
+.card:hover {
+    box-shadow: 2rem 2rem 3rem #454545;
+    transform: translateY(-1rem);
+}
+
+.card label {
+    font-size: 2rem;
+    font-family: var(--section-header);
+    padding: 1rem;
+}
+
+.card input {
+    font-size: 2rem;
+    padding: 1rem;
+    border: 0.3rem #111111 solid;
+    border-radius: 3rem;
+    outline: none;
+}
+
+.card input:required{
+    border: 0.3rem #ff0000 solid;
+}
+
+.card textarea {
+    min-height: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    border: #111111 solid 0.3rem;
+    border-radius: 3rem;
+    outline: none;
+}
+
+#btn {
+    padding: 1rem 2rem;
+    background: transparent;
+    border-radius: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #454545;
+    border: 0.2rem #454545 solid;
+    transition: all 0.3s linear;
+    outline: none;
+}
+
+#btn:hover {
+    background-color: #454545;
+    color: aliceblue;
+}
+
+/* FOOTER */
+
+.footer{
+    min-height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 5rem;
+    padding: 0 2rem;
+    background-color: #454545;
+}
+
+.icon-container{
+    color: whitesmoke;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i{
+    transition:all 0.3s linear;
+    cursor: pointer;
+}
+
+i:hover {
+    color: olivedrab;
+}
+
+.phone-number{
+    color: whitesmoke;
+    cursor: pointer;
+    transition:all 0.3s linear;
+}
+
+.phone-number:hover{
+    color: olivedrab;
+}
